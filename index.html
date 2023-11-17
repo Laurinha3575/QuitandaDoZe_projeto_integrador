@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- ícone na aba do navegador -->
+    <link rel="icon" href="img/img.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="estilo.css">
+    <!-- <link rel="icon" href="img/favicon.ico"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+  </style>
+    <title>Quitanda do Zé :: Página Principal</title>
+</head>
+<body>
+<!-- navBar bootstrap - inicio -->
+  <div class="d-flex flex-column wrapper">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-success shadow border-bottom border-dark border-opacity-10"> <!-- bg == background  -->
+   
+            <!-- *fluid* (<div class="container-fluid">) se retirar, retira a configuração de margin 0 -->
+            <div class="container">
+                <!-- *TAMANHO=fs-4* quanto maior o numero menor a letra-->
+                <!-- *NEGRITO=fw-bold*-->
+                <!-- *COR DA FONTE=text-white* -->
+                <i class="bi bi-shop-window fs-1 fw-bold text-white"></i>
+                <!-- *mx* margin do eixo x -->
+              <a class="navbar-brand fs-4 fw-bold text-white mx-3" href="#">Quitanda do Zé</a>
+   
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+   
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+   
+                  <li class="nav-item">
+                    <!-- <a class="nav-link active bg-white" aria-current="page" href="#">Principal</a> == aqui o bg aplica como grifado atras do Principal, porque é background (cor de fundo)-->
+                    <a class="nav-link active text-white" aria-current="page" href="#">Principal</a>
+                  </li>
+   
+                  <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="sobre.html">Quem somos</a>
+                  </li>
+     
+                </ul>
+   
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="O que deseja? " aria-label="Search">
+                </form>
+                <!-- para adicionar icone precisei tirar o bottom do form -->
+                <button class="btn btn-danger" type="submit"><i class="bi bi-search "></i>Buscar</button>
+   
+              </div>
+            </div>
+        </nav>
+    </header>
+<!-- navBar bootstrap  - fim -->
+
+    <main class="flex-fill">
+<!-- carrossel banner - inicio -->
+        <div class="container-flexible">
+          <div id="carouselExampleInterval" class="carousel slide w-100 m-none" data-bs-ride="carousel">
+            <div class="carousel-inner mb-5">
+              <div class="carousel-item active" data-bs-interval="3500">
+                  <div class="banner">
+                  <img src="img/banner.png" class="d-block w-100">
+                  </div>
+              </div>
+          <div class="carousel-item" data-bs-interval="3500">
+            <div class="banner">
+              <img src="img/banner.png" class="d-block w-100">
+          </div>
+          </div>
+            <div class="carousel-item" data-bs-interval="3500">
+          <div class="banner">
+            <img src="img/banner.png" class="d-block w-100">
+          </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev me-5" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next ms-5" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+        </div>
+        </div>
+<!-- carrossel banner - fim -->
+
+    <div class="ofertas_txt">
+      <h1 class="text-center">🍉Ofertas da Semana🍉</h1>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4">
+
+          <!-- abacaxi -->
+          <div class="card">
+            <img src="img/abacaxi.png" class="card-img-top" alt="imagem de um abacaxi">
+            <div class="card-body">
+              <h5 class="card-title">Abacaxi</h5>
+              <p class="card-text">Abacaxi selecionados a mão, de horigem orgânica.</p>
+              <a href="#" class="btn btn-primary">R$8,79 a UNIDADE</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+         
+          <!-- amora -->
+          <div class="card">
+            <img src="img/amora.png" class="card-img-top" alt="imagem de uma amora">
+            <div class="card-body">
+              <h5 class="card-title">Amora</h5>
+              <p class="card-text">Amoras selecionadas a mão, de horigem orgânica.</p>
+              <a href="#" class="btn btn-primary">R$78,99 o Kg</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+
+          <!-- banana -->
+          <div class="card">
+            <img src="img/banana.png" class="card-img-top" alt="imagem de uma banana">
+            <div class="card-body">
+              <h5 class="card-title">Banana</h5>
+              <p class="card-text">Bananas selecionadas a mão, de horigem orgânica.</p>
+              <a href="#" class="btn btn-primary">R$6,99 o Kg</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <!-- caqui -->
+          <div class="card">
+            <img src="img/caqui.png" class="card-img-top" alt="imagem de um caqui">
+            <div class="card-body">
+              <h5 class="card-title">Caqui</h5>
+              <p class="card-text">Caqui selecionados a mão, de horigem orgânica.</p>
+              <a href="#" class="btn btn-primary">R$6,00 a BANDEJA</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+
+          <!-- cereja -->
+          <div class="card">
+            <img src="img/cereja.png" class="card-img-top" alt="imagem de cerejas">
+            <div class="card-body">
+              <h5 class="card-title">Cereja</h5>
+              <p class="card-text">Cerejas selecionadas a mão, de horigem orgânica.</p>
+              <a href="#" class="btn btn-primary">R$79,00 o Kg</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+         
+          <!-- kiwi -->
+          <div class="card">
+            <img src="img/kiwi.png" class="card-img-top" alt="imagem de um kiwi">
+            <div class="card-body">
+              <h5 class="card-title">kiwi</h5>
+              <p class="card-text">Kiwi selecionados a mão, de horigem orgânica.</p>
+              <a href="#" class="btn btn-primary">R$31,98 o Kg</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+
+          <div class="card">
+            <img src="img/laranja.png" class="card-img-top" alt="imagem de uma laranja">
+            <div class="card-body">
+              <h5 class="card-title">laranja</h5>
+              <p class="card-text">Laranjas selecionadas a mão, de horigem orgânica.</p>
+              <a href="#" class="btn btn-primary">R$7,99 o Kg</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+
+          <div class="card">
+            <img src="img/lichia.png" class="card-img-top" alt="imagem de uma lichia">
+            <div class="card-body">
+              <h5 class="card-title">Lichia</h5>
+              <p class="card-text">Lichias selecionadas a mão, de horigem orgânica.</p>
+              <a href="#" class="btn btn-primary">R$15,99 o Kg</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+
+          <div class="card">
+            <img src="img/limao.png" class="card-img-top" alt="imagem de um limão">
+            <div class="card-body">
+              <h5 class="card-title">Limão</h5>
+              <p class="card-text">Limões selecionados a mão, de horigem orgânica.</p>
+              <a href="#" class="btn btn-primary">R$14,99 o Kg</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+
+          <div class="card">
+            <img src="img/maca.png" class="card-img-top" alt="imagem de uma maçã">
+            <div class="card-body">
+              <h5 class="card-title">Maçã</h5>
+              <p class="card-text">Maçãs selecionadas a mão, de horigem orgânica.</p>
+              <a href="#" class="btn btn-primary">R$9,55 o Kg</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+
+          <div class="card">
+            <img src="img/maracuja.png" class="card-img-top" alt="imagem de um maracujá">
+            <div class="card-body">
+              <h5 class="card-title">Maracujá</h5>
+              <p class="card-text">Maracujá selecionados a mão, de horigem orgânica.</p>
+              <a href="#" class="btn btn-primary">R$28,99 o Kg</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+
+          <div class="card">
+            <img src="img/morango.png" class="card-img-top" alt="imagem de um morango">
+            <div class="card-body">
+              <h5 class="card-title">Morango</h5>
+              <p class="card-text">Morangos selecionados a mão, de horigem orgânica. </p>
+              <a href="#" class="btn btn-primary">R$20,00 o Kg</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+
+          <div class="card">
+            <img src="img/pessego.png" class="card-img-top" alt="imagem de um pêssego">
+            <div class="card-body">
+              <h5 class="card-title">Pêssego</h5>
+              <p class="card-text">Pêssegos selecionados a mão, de horigem orgânica.</p>
+              <a href="#" class="btn btn-primary">R$18,99 o Kg</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+
+          <div class="card">
+            <img src="img/pitaia.png" class="card-img-top" alt="imagem de um pitaya">
+            <div class="card-body">
+              <h5 class="card-title">Pitaya</h5>
+              <p class="card-text">Pitayas selecionados a mão, de horigem orgânica.</p>
+              <a href="#" class="btn btn-primary">R$69,99 o Kg</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>  
+    </main>
+
+<!-- footer-inicio -->
+    <footer>
+        <div class="bg-success">
+          <div class="container  p-5">
+              <div class="row bg-success p-3">
+                  <div class="col-12  col-md-4 text-center text-light">
+                    &copy; 2023 - Quitanda do Zé - ME <br>
+                    Rua Érico Pimentel Dias, 187, Itapeva/SP<br>
+                    CNPJ 99.999.999/0001-99
+                  </div>
+                  <div class="col-12  col-md-4 text-center text-light">
+                  Política de Privacidade <br>
+                  Termos de uso <br>
+                  Trocas e devoluções
+                  </div>
+                  <div class="col 12  col-md-4 text-center text-light ">
+                    Contato pelo Site <br>
+                    contato@quitandadoze.com.br <br>
+                    Cel: 15 99999-9999<br>
+                    Desenvolvido por: <a href='https://github.com/ni-vis' style="text-decoration: none; color: inherit;"> ✨ni_vis✨</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </footer>
+<!-- footer-fim -->
+  </div>
+
+<!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
